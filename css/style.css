@@ -85,7 +85,7 @@ i.fa-arrow-down {
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .main-title__img {
@@ -108,33 +108,30 @@ input[type="radio"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     
 }
 
-.business-plan__card {
-    flex-basis: calc(100% / 3-20);
+.business-plan > div {
+    flex-basis: calc(100% / 3 - 10);
     flex-grow: 1;
 }
 
-
-.name-pack {
-    border: 1px solid lightgray;
-    
+.business-plan > div:last-child {
+    flex-basis: 100%;
 }
 
+.business-plan__card {
+    border: 1px solid lightgray;   
+}
+
+.name-pack {
+    border-bottom: 1px solid lightgray;   
+}
 h5 {
     padding-top: 30px;
     border-top: 1px solid lightgray;
 }
-
-.important {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 
 
 .business-info {
@@ -159,4 +156,11 @@ figure.img-business img {
 
 .text-business {
     flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+
+   
 }
