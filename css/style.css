@@ -33,35 +33,47 @@ a {
     display: block;
 }
 
-.btn-blue {
-    background-color:#0063F9;
-    color: white;
+.btn {
     padding: 10px;
 }
 
-section.title-section {
-    background-color: #B4D0E6;
-    padding-inline: 15%;
-    width: 100%;
+.btn-blue {
+    background-color:#0063F9;
+    color: white;
 }
 
-section.business-choice {
-    padding-inline: 15%;
-    margin-block: 5%;
+section.title-section {
+    background: linear-gradient(#b4d0e6 90%, #fff 10%);
+    padding: 10px;
+}
+
+.title-container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
     text-align: center;
-    font-size: 90px;
 }
 
 .main-title {
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
     gap: 10px;
-   position: relative;
+    position: relative;
+}
+
+.main-title a.btn {
+    width: 60%;
+    text-align: center;
+}
+
+i.fa-arrow-down {
+    font-size: 50px;
+    margin-top: 30px;
 }
 
 .photo {
@@ -69,39 +81,40 @@ h1 {
     display: block;
 }
 
-/*.main-title__absolute {
-    position: absolute;
-    top: 0;
- 
-
+.main-title__text {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.main-title__position {
-    position: absolute;
-    top: -10px;
-}*/
+.main-title__img {
+    flex-basis: 60%;
+}
+
+.container-business {
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 input[type="radio"] {
     background-color: #fff;
     border-color: #D4D4D4;
-}
-
-.radio-check {
-    margin-block: 10px;
+    margin-top: 30px;
 }
 
 .business-plan {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20%;
-    flex-basis: calc(100% / 3-20);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
     
 }
 
-.business-plan__column {
+.business-plan__card {
     flex-basis: calc(100% / 3-20);
+    flex-grow: 1;
 }
 
 
@@ -129,3 +142,21 @@ h5 {
     flex-direction: column;
 }
 
+.container-business.flex {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+figure.img-business img {
+    width: 100%;
+}
+
+.img-business {
+    flex-basis: 60%;
+    flex-grow: 2;
+}
+
+.text-business {
+    flex-basis: 40%;
+}
