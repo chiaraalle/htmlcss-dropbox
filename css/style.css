@@ -113,7 +113,7 @@ input[type="radio"] {
 }
 
 .business-plan > div {
-    flex-basis: calc(100% / 3 - 10);
+    flex-basis: calc(100% / 3 - 10px);
     flex-grow: 1;
 }
 
