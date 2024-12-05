@@ -20,7 +20,7 @@ header {
     align-items: center;
 }
 
-ul {
+ul.list-nav {
     display: flex;
     gap: 30px;
 }
@@ -134,7 +134,7 @@ input[type="radio"] {
     border-bottom: 1px solid lightgray; 
     text-align: center;  
 }
-h5 {
+.business-info h5 {
     padding-top: 30px;
     border-top: 1px solid lightgray;
 }
@@ -224,11 +224,39 @@ figure.img-business img {
     align-items: flex-start;
     flex-direction: column;
     gap: 30px;
-    margin-top: 60px;
+    margin-block: 60px;
 }
 
 footer {
     background-color: #000000;
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
 }
 
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+
+.info, h5, ul, li, a {
+    color: white;
+}
+
+.info h5 {
+    margin-block: 10px;
+}
+
+.info {
+    flex-basis: 25%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
 
