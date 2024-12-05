@@ -88,6 +88,7 @@ i.fa-arrow-down {
     gap: 30px;
 }
 
+
 .main-title__img {
     flex-basis: 60%;
 }
@@ -125,8 +126,13 @@ input[type="radio"] {
     border: 1px solid lightgray;   
 }
 
+.btn.btn-blue.width {
+    width: 20%;
+}
+
 .name-pack {
-    border-bottom: 1px solid lightgray;   
+    border-bottom: 1px solid lightgray; 
+    text-align: center;  
 }
 h5 {
     padding-top: 30px;
@@ -137,7 +143,23 @@ h5 {
 .business-info {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
+
+.business-info .btn {
+    width: 50%;
+    text-align: center;
+}
+
+.business-info > span.color-gray {
+   color: slategrey;
+}
+
+a.underline {
+    text-decoration: underline;
+    color: #392ce6;
+} 
 
 .container-business.flex {
     display: flex;
@@ -160,7 +182,53 @@ figure.img-business img {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding: 20px;
-
-   
+    padding: 20px 50px;
 }
+
+.operation-cards h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-text p {
+    padding: 10px;
+}
+
+.card-text h3 {
+    font-size: 1.5rem;
+}
+
+.operation-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.operation-card__section {
+    flex-basis: calc(100% / 3 - 10px);
+}
+
+
+.container-business.width{
+    width: 30%;
+    margin: 0 10%;
+}
+
+.business-bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #000000;
+}
+
+
